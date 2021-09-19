@@ -75,7 +75,7 @@
                             <li><h4>Legislators of Interest</h4></li>
                         </ul>
                     </li>
-                    <li>Database entries:</li>
+                    <li><h3>Database entries:</h3></li>
                     <ul> 
                         <li><h3>USER -> firstName, lastName, email, password, location, politicalInterests, legislatorsOfInterest</h3></li>
                         <li><h3>LEGISLATOR -> CID, firstName, lastName, party, office</h3></li>
@@ -88,7 +88,14 @@
             <footer>
                 <div class="footer_box"></div>
                 <div class="footer_box"></div>
-                <div class="footer_box"></div>
+                <div class="footer_box">
+                    <form action="/action_page.php">
+                        <label for="fontSize">Adjust font size:</label><br>
+                        <input type="radio" id="smallFont" name="fontSize" value="Small"><br>
+                        <input type="radio" id="defaulFont" name="fontSize" value="Default"><br>
+                        <input type="radio" id="largeFont" name="fontSize" value="Large">
+                    </form> 
+                </div>
             </footer>
         </div><!--Closing container-->
     </body>
