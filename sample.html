@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Example Page on Threat Modeling</title>
+        <title>Political Affiars Website</title>
 
         <script>
             /** JS Code **/
@@ -14,36 +14,54 @@
             
             #container{
                 display: grid;
+                grid-gap: 20px;
                 grid-template-columns: repeat(4, 1fr);
                 grid-template-rows: repeat(4, 75px);
                 width: 80%;
                 margin: auto;
-            }
+            }            
+
             header{
-                width: 100%;
-                height: 200px;
-                background-color: gray;
+                width: 1000px;
+                height: 100%;
+                margin:auto;
+                background-color: lightgray;
             }
-            .middleboxes{
-                background-color: gray;
+            .midLeft{
+                background-color: lightgray;
                 width: 400px;
-                height: 500px;
- 
-                margin: 1%;
+                height: 500px; 
+                margin: 10%;
+
+                font-size: small;
+                color:rgb(102, 102, 102)
+
+            }
+            .midRight{
+                background-color: lightgray;
+                width: 400px;
+                height: 500px; 
+                margin: 10%;
+
+                font-size: small;
+                color:rgb(102, 102, 102)
 
             }
             footer{
                 display: flex;
-                background-color: gray;
+                background-color: lightgray;
                 width: 100%;
-                height: 200px;
+                height: 200px;               
                 clear: both;
+
+                font-size: small;
+                color:rgb(102, 101, 101)
             }
             .footer_box{
                 
-                background-color: rgb(41, 40, 40);
+                background-color: rgb(175, 175, 175);
                 width: 150px;
-                margin: 1%;
+                margin: 1%;                
                 height: 150px;
             }
         </style>
@@ -54,7 +72,7 @@
             <header>
 
             </header>
-            <section class="middleboxes">
+            <section class="midLeft">
                 <ol>
                     <li>
                         <h3>Our team is planning to use a <a href = "https://newsapi.org/">News API</a>
@@ -86,18 +104,33 @@
                     </ul>
                 </ol>
             </section>
-            <section class="middleboxes">Address the following in this section:</section>
+            <section class="midRight">
+                <ol>
+                    <l1>
+                        <h3>This site is focused on individuals that are politically engaged
+                            and are aware of current political affairs. In addition, it is meant to serve as a tool for individuals to 
+                            become educated on political issues, local government protocols, and how these decisions are relevant/important. 
+                        </h3>
+                    </l1>
+                    <l1>
+                        <h3>The two primary goals of this site: <br>
+                            1. Raise awareness about political issues and events
+                            2. Keep individuals informed about local government policies and financial affairs of legislators 
+                        </h3>
+                    </l1>
+                    <l1>
+                        <h3> Our team is motivated to provide a reliable source that offers transparency of legislator financial affairs \
+                            that affect voter records. In addition, we strive to raise awareness about political issue and why it importance 
+                            for people to stay engaged with political affairs. 
+                        </h3>
+                    </l1>
+                </ol>
+            
+            </section>
             <footer>
-                <div class="footer_box"></div>
-                <div class="footer_box"></div>
-                <div class="footer_box">
-                    <form action="/action_page.php">
-                        <label for="fontSize">Adjust font size:</label><br>
-                        <input type="radio" id="smallFont" name="fontSize" value="Small"><br>
-                        <input type="radio" id="defaulFont" name="fontSize" value="Default"><br>
-                        <input type="radio" id="largeFont" name="fontSize" value="Large">
-                    </form> 
-                </div>
+                <div class="footer_box">Link to API's</div>
+                <div class="footer_box">"Primary questions or concerns"</div>                
+                <div class="footer_box">Accessability implementation</div>
             </footer>
         </div><!--Closing container-->
     </body>
