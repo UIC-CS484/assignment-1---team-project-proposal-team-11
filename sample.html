@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Example Page on Threat Modeling</title>
+        <title>Political Affiars Website</title>
 
         <script>
             /** JS Code **/
@@ -12,49 +12,152 @@
         <style>
             /** Presentation Logic**/
             
-            #container{
+            .container{
                 display: grid;
+                grid-template-areas: 'header header header header header header'
+                                     'midLeft midLeft midLeft midRight midRight midRight'
+                                     'footerbox1 footerbox1 footerbox2 footerbox2 footerbox3 footerbox3';
+                grid-gap: 15px;
+                /* width: 82%;
+                margin: auto
                 grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: repeat(4, 75px);
-                width: 80%;
-                margin: auto;
+                grid-template-rows: repeat(3, 100px);
+                height: 900px;   
+                border: 2px solid green;                                                    */
+            }               
+
+
+            .header {
+                grid-area: header;
+            }
+            .midLeft {
+                grid-area: midLeft;
+            }
+            .midRight {
+                grid-area: midRight;
+            }
+            .footerbox1 {
+                grid-area: footerbox1;
+                border: 2px solid orange;
+                background-color: lightgray;
+                /* width: 85%;
+                height: 200px;  */
+            }
+            .footerbox2 {
+                grid-area: footerbox2;
+                border: 2px solid orange;
+                background-color: lightgray;
+                /* width: 85%;
+                height: 200px;  */
+            }
+            .footerbox3 {
+                grid-area: footerbox3;
+                border: 2px solid orange;
+                background-color: lightgray;
+                /* width: 85%;
+                height: 200px;  */
             }
             header{
-                width: 100%;
-                height: 200px;
-                background-color: gray;
-            }
-            .middleboxes{
-                background-color: gray;
-                width: 400px;
-                height: 500px;
- 
-                margin: 1%;
+                text-align: center;
+                font-size: small;
+                color: rgb(100, 95, 95);
 
+                border: 2px solid red;               
+                /* width: 82%;
+                margin: auto;                 */
+                background-color: lightgray;
+
+                /* grid-column-start: 1;
+                grid-column-end: -1;
+                grid-row-start: 1;
+                grid-row-end: 2; */
             }
-            footer{
-                display: flex;
-                background-color: gray;
-                width: 100%;
-                height: 200px;
-                clear: both;
-            }
-            .footer_box{
+
+            .midLeft{
+                border: 2px solid purple;
+                background-color: lightgray;
+                /* width: 400px;
+                height: 500px; 
+                margin: auto;
+                float: left;
+                padding-right: 30px; */
                 
-                background-color: rgb(41, 40, 40);
-                width: 150px;
-                margin: 1%;
-                height: 150px;
+                /* grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3; */
+
+                font-size: x-small;
+                color:rgb(102, 102, 102);
             }
+
+            .midRight{
+                border: 2px solid pink;
+                background-color: lightgray;
+                /* width: 400px;
+                height: 500px; 
+                padding-left: 30px; */
+                
+                font-size: smaller;
+                color:rgb(102, 102, 102);
+                
+
+                /* grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 3; */
+
+               /** 
+                flex-wrap:wrap;
+                margin: auto;
+                flex:1 0 50%;
+                height: 500px;
+                margin: 2%;**/
+            }
+/* 
+            footer{
+                border: 2px solid orange;
+                background-color: lightgray;
+                width: 85%;
+                height: 200px; 
+
+                clear: both;
+                display: flex;
+                flex-wrap: wrap;
+
+                font-size: small;
+                color:rgb(102, 101, 101);
+
+                grid-column-start: 1;
+                grid-column-end: -1;
+                grid-row-start: 3;
+                grid-row-end: -1;
+            } */
+
+            /* .footer_box{
+                border: 2px solid blue;
+                background-color: rgb(175, 175, 175);
+                width: 150px;
+                margin: 1%;                
+                height: 150px;
+
+                flex:1 0 350px;
+                height: 325px;
+                margin: 2%;
+            } */
+
         </style>
 
     </head>
     <body>
-        <div id="container">
-            <header>
+        
+        <div class="container">
+            <div class = "header"><header>
+                <h1>Current Political Affairs</h1>
 
-            </header>
-            <section class="middleboxes">
+            </header></div>
+
+        <div class = "midLeft"><section>
                 <ol>
                     <li>
                         <h3>Our team is planning to use a <a href = "https://newsapi.org/">News API</a>
@@ -85,20 +188,32 @@
                         <li><h4>COMMITTEE -> cmteCode </h4></li>
                     </ul>
                 </ol>
-            </section>
-            <section class="middleboxes">Address the following in this section:</section>
-            <footer>
-                <div class="footer_box"></div>
-                <div class="footer_box"></div>
-                <div class="footer_box">
-                    <form action="/action_page.php">
-                        <label for="fontSize">Adjust font size:</label><br>
-                        <input type="radio" id="smallFont" name="fontSize" value="Small"><br>
-                        <input type="radio" id="defaulFont" name="fontSize" value="Default"><br>
-                        <input type="radio" id="largeFont" name="fontSize" value="Large">
-                    </form> 
-                </div>
-            </footer>
+            </section></div>
+        <div  class="midRight"><section>
+                <ol>
+                    <l1>
+                        <h3>This site is focused on individuals that are politically engaged
+                            and are aware of current political affairs. In addition, it is meant to serve as a tool for individuals to 
+                            become educated on political issues, local government protocols, and how these decisions are relevant/important. 
+                        </h3>
+                    </l1>
+                    <l1>
+                        <h3>The two primary goals of this site: <br>
+                            1. Raise awareness about political issues and events
+                            2. Keep individuals informed about local government policies and financial affairs of legislators 
+                        </h3>
+                    </l1>
+                    <l1>
+                        <h3> Our team is motivated to provide a reliable source that offers transparency of legislator financial affairs \
+                            that affect voter records. In addition, we strive to raise awareness about political issue and why it importance 
+                            for people to stay engaged with political affairs. 
+                        </h3>
+                    </l1>
+                </ol>
+            </section></div>
+                <div class="footerbox1">Link to API's</div>
+                <div class="footerbox2">"Primary questions or concerns"</div>                
+                <div class="footerbox3">Accessability implementation</div>
         </div><!--Closing container-->
     </body>
 </html>
