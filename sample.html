@@ -12,46 +12,80 @@
         <style>
             /** Presentation Logic**/
             
-            #container{
+            .container{
                 display: grid;
+                grid-template-areas: 'header header header header header header'
+                                     'midLeft midLeft midLeft midRight midRight midRight'
+                                     'footerbox1 footerbox1 footerbox2 footerbox2 footerbox3 footerbox3';
                 grid-gap: 15px;
-                width: 82%;
-                margin: auto;
+                /* width: 82%;
+                margin: auto
                 grid-template-columns: repeat(4, 1fr);
                 grid-template-rows: repeat(3, 100px);
                 height: 900px;   
-                border: 2px solid green;                                                   
+                border: 2px solid green;                                                    */
             }               
 
+
+            .header {
+                grid-area: header;
+            }
+            .midLeft {
+                grid-area: midLeft;
+            }
+            .midRight {
+                grid-area: midRight;
+            }
+            .footerbox1 {
+                grid-area: footerbox1;
+                border: 2px solid orange;
+                background-color: lightgray;
+                /* width: 85%;
+                height: 200px;  */
+            }
+            .footerbox2 {
+                grid-area: footerbox2;
+                border: 2px solid orange;
+                background-color: lightgray;
+                /* width: 85%;
+                height: 200px;  */
+            }
+            .footerbox3 {
+                grid-area: footerbox3;
+                border: 2px solid orange;
+                background-color: lightgray;
+                /* width: 85%;
+                height: 200px;  */
+            }
             header{
                 text-align: center;
                 font-size: small;
                 color: rgb(100, 95, 95);
 
                 border: 2px solid red;               
-                width: 82%;
-                margin: auto;                
+                /* width: 82%;
+                margin: auto;                 */
                 background-color: lightgray;
 
-                grid-column-start: 1;
+                /* grid-column-start: 1;
                 grid-column-end: -1;
                 grid-row-start: 1;
-                grid-row-end: 2;
+                grid-row-end: 2; */
             }
 
             .midLeft{
                 border: 2px solid purple;
                 background-color: lightgray;
-                width: 400px;
+                /* width: 400px;
                 height: 500px; 
                 margin: auto;
                 float: left;
-                padding-right: 30px;
+                padding-right: 30px; */
                 
-                grid-column-start: 2;
+                /* grid-column-start: 2;
                 grid-column-end: 3;
                 grid-row-start: 2;
-                grid-row-end: 3;
+                grid-row-end: 3; */
 
                 font-size: x-small;
                 color:rgb(102, 102, 102);
@@ -60,18 +94,18 @@
             .midRight{
                 border: 2px solid pink;
                 background-color: lightgray;
-                width: 400px;
+                /* width: 400px;
                 height: 500px; 
-                padding-left: 30px;
+                padding-left: 30px; */
                 
                 font-size: smaller;
                 color:rgb(102, 102, 102);
                 
 
-                grid-column-start: 3;
+                /* grid-column-start: 3;
                 grid-column-end: 4;
                 grid-row-start: 2;
-                grid-row-end: 3;
+                grid-row-end: 3; */
 
                /** 
                 flex-wrap:wrap;
@@ -80,7 +114,7 @@
                 height: 500px;
                 margin: 2%;**/
             }
-
+/* 
             footer{
                 border: 2px solid orange;
                 background-color: lightgray;
@@ -98,9 +132,9 @@
                 grid-column-end: -1;
                 grid-row-start: 3;
                 grid-row-end: -1;
-            }
+            } */
 
-            .footer_box{
+            /* .footer_box{
                 border: 2px solid blue;
                 background-color: rgb(175, 175, 175);
                 width: 150px;
@@ -110,20 +144,20 @@
                 flex:1 0 350px;
                 height: 325px;
                 margin: 2%;
-            }
+            } */
 
         </style>
 
     </head>
     <body>
         
-        <div id="container">
-            <header>
+        <div class="container">
+            <div class = "header"><header>
                 <h1>Current Political Affairs</h1>
 
-            </header>
+            </header></div>
 
-            <section class="midLeft">
+        <div class = "midLeft"><section>
                 <ol>
                     <li>
                         <h3>Our team is planning to use a <a href = "https://newsapi.org/">News API</a>
@@ -154,8 +188,8 @@
                         <li><h3>COMMITTEE -> cmteCode </h3></li>
                     </ul>
                 </ol>
-            </section>
-            <section class="midRight">
+            </section></div>
+        <div  class="midRight"><section>
                 <ol>
                     <l1>
                         <h3>This site is focused on individuals that are politically engaged
@@ -176,13 +210,10 @@
                         </h3>
                     </l1>
                 </ol>
-            
-            </section>
-            <footer>
-                <div class="footer_box">Link to API's</div>
-                <div class="footer_box">"Primary questions or concerns"</div>                
-                <div class="footer_box">Accessability implementation</div>
-            </footer>
+            </section></div>
+                <div class="footerbox1">Link to API's</div>
+                <div class="footerbox2">"Primary questions or concerns"</div>                
+                <div class="footerbox3">Accessability implementation</div>
         </div><!--Closing container-->
     </body>
 </html>
