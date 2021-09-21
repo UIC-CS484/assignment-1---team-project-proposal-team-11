@@ -14,64 +14,115 @@
             
             #container{
                 display: grid;
-                grid-gap: 20px;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: repeat(4, 75px);
-                width: 80%;
+                grid-gap: 15px;
+                width: 82%;
                 margin: auto;
-            }            
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3, 100px);
+                height: 900px;   
+                border: 2px solid green;                                                   
+            }               
 
             header{
-                width: 1000px;
-                height: 100%;
-                margin:auto;
+                text-align: center;
+                font-size: small;
+                color: rgb(100, 95, 95);
+
+                border: 2px solid red;               
+                width: 82%;
+                margin: auto;                
                 background-color: lightgray;
+
+                grid-column-start: 1;
+                grid-column-end: -1;
+                grid-row-start: 1;
+                grid-row-end: 2;
             }
+
             .midLeft{
+                border: 2px solid purple;
                 background-color: lightgray;
                 width: 400px;
                 height: 500px; 
-                margin: 10%;
-
-                font-size: small;
-                color:rgb(102, 102, 102)
-
-            }
-            .midRight{
-                background-color: lightgray;
-                width: 400px;
-                height: 500px; 
-                margin: 10%;
-
-                font-size: small;
-                color:rgb(102, 102, 102)
-
-            }
-            footer{
-                display: flex;
-                background-color: lightgray;
-                width: 100%;
-                height: 200px;               
-                clear: both;
-
-                font-size: small;
-                color:rgb(102, 101, 101)
-            }
-            .footer_box{
+                margin: auto;
+                float: left;
+                padding-right: 30px;
                 
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+
+                font-size: x-small;
+                color:rgb(102, 102, 102);
+            }
+
+            .midRight{
+                border: 2px solid pink;
+                background-color: lightgray;
+                width: 400px;
+                height: 500px; 
+                padding-left: 30px;
+                
+                font-size: smaller;
+                color:rgb(102, 102, 102);
+                
+
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 3;
+
+               /** 
+                flex-wrap:wrap;
+                margin: auto;
+                flex:1 0 50%;
+                height: 500px;
+                margin: 2%;**/
+            }
+
+            footer{
+                border: 2px solid orange;
+                background-color: lightgray;
+                width: 85%;
+                height: 200px; 
+
+                clear: both;
+                display: flex;
+                flex-wrap: wrap;
+
+                font-size: small;
+                color:rgb(102, 101, 101);
+
+                grid-column-start: 1;
+                grid-column-end: -1;
+                grid-row-start: 3;
+                grid-row-end: -1;
+            }
+
+            .footer_box{
+                border: 2px solid blue;
                 background-color: rgb(175, 175, 175);
                 width: 150px;
                 margin: 1%;                
                 height: 150px;
+
+                flex:1 0 350px;
+                height: 325px;
+                margin: 2%;
             }
+
         </style>
 
     </head>
     <body>
+        
         <div id="container">
             <header>
+                <h1>Current Political Affairs</h1>
 
             </header>
+
             <section class="midLeft">
                 <ol>
                     <li>
