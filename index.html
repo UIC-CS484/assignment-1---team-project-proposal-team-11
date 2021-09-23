@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Political Funds & Affairs Transparency</title>
+        <meta charset="UTF-8">
+
+        <script>
+            /** JS Code **/
+            function smallfont() {
+                var elems = document.querySelector("*");
+                elems.style.font = "5px Poppins,serif";
+            }
+            function defaultfont() {
+                var elems = document.querySelector("*");
+                elems.style.font = "15px Poppins,serif";
+            }
+            function largefont() {
+                var elems = document.querySelector("*");
+                elems.style.font = "25px Poppins,serif";
+            }
+        </script>
+        
+
+        <style>
+            /** Presentation Logic**/
+            @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Nunito:wght@300&family=Poppins:wght@300&display=swap');
+
+            .header {
+                grid-area: header;
+            }
+            .midLeft {
+                grid-area: midLeft;
+            }
+            .midRight {
+                grid-area: midRight;
+            }
+            .footerbox1 {
+                grid-area: footerbox1;
+                border: 2px solid orange;
+                background-color: lightgray;
+            }
+            .footerbox2 {
+                grid-area: footerbox2;
+                border: 2px solid orange;
+                background-color: lightgray;
+            }
+            .footerbox3 {
+                grid-area: footerbox3;
+                border: 2px solid orange;
+                background-color: lightgray;
+            }
+            header{
+                text-align: center;
+                font-size: small;
+                color: rgb(100, 95, 95);
+
+                border: 2px solid red;                 
+                background-color: lightgray;
+            }
+
+            .midLeft{
+                border: 2px solid purple;
+                background-color: lightgray;
+                color:rgb(102, 102, 102);
+            }
+
+            .midRight{
+                border: 2px solid pink;
+                background-color: lightgray;            
+                color:rgb(102, 102, 102);
+            }
+
+            @media only screen and (max-width: 600px) {
+                .container{
+                    display: grid;
+                    grid-template-areas: 'header'
+                                         'midLeft'
+                                         'midRight'
+                                         'footerbox1'
+                                         'footerbox2'
+                                         'footerbox3';
+                    grid-gap: 15px;
+                }   
+                header {
+                    border: 2px double #272932;
+                    background-color: white;
+                }
+                .midLeft {
+                    border: 2px double #272932;
+                    background-color: white;
+                }
+                .midRight {
+                    border: 2px double #272932;
+                    background-color: white;
+                }
+                .footerbox1 {
+                    border: 2px double #272932;
+                    background-color: white;
+                }
+                .footerbox2 {
+                    border: 2px double #272932;
+                    background-color: white;
+                }
+                .footerbox3 {
+                    border: 2px double #272932;
+                    background-color: white;
+                }
+                
+                * {
+                    color: blue;
+                    font-family: 'Poppins', sans-serif;
+                }
+
+                body {
+                    background-color: rgb(239, 214, 210);
+                }
+                
+            }
+
+            @media only screen and (min-width: 600px) {
+                .container{
+                    display: grid;
+                    grid-template-areas: 'header header'
+                                         'header header'
+                                         'midLeft midLeft'
+                                         'midRight midRight'
+                                         'footerbox1 footerbox1'
+                                         'footerbox2 footerbox2'
+                                         'footerbox3 footerbox3';
+                    grid-gap: 15px;
+                }  
+                header {
+                    border: 2px double #048BA8;
+                    background-color: white;
+                }
+                .midLeft {
+                    border: 2px double #048BA8;
+                    background-color: white;
+                }
+                .midRight {
+                    border: 2px double #048BA8;
+                    background-color: white;
+                }
+                .footerbox1 {
+                    border: 2px double #048BA8;
+                    background-color: white;
+                }
+                .footerbox2 {
+                    border: 2px double #048BA8;
+                    background-color: white;
+                }
+                .footerbox3 {
+                    border: 2px double #048BA8;
+                    background-color: white;
+                }
+                
+                * {
+                    color: #2D2D2A;
+                    font-family: 'Nunito', sans-serif;
+                }
+
+                body {
+                    background-color: #DAF5FF;
+                }
+            }
+
+            @media only screen and (min-width: 992px) {
+                .container{
+                    display: grid;
+                    grid-template-areas: 'header header header header header header'
+                                        'midLeft midLeft midLeft midRight midRight midRight'
+                                        'footerbox1 footerbox1 footerbox2 footerbox2 footerbox3 footerbox3';
+                    grid-gap: 15px;
+                }
+                header {
+                    border: 2px double #FF1053;
+                    background-color: white;
+                }
+                .midLeft {
+                    border: 2px double #FF1053;
+                    background-color: white;
+                }
+                .midRight {
+                    border: 2px double #FF1053;
+                    background-color: white;
+                }
+                .footerbox1 {
+                    border: 2px double #FF1053;
+                    background-color: white;
+                }
+                .footerbox2 {
+                    border: 2px double #FF1053;
+                    background-color: white;
+                }
+                .footerbox3 {
+                    border: 2px double #FF1053;
+                    background-color: white;
+                }
+                
+                * {
+                    color: #2D2D2A;
+                    font-family: 'Karla', sans-serif;
+                }
+
+                body {
+                    background-color: #B8F3F4;
+                }
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class = "header"><header>
+                <h1>Political Funds/Affiars Transparency</h1>
+
+            </header></div>
+
+        <div class = "midLeft"><section>
+                <ol>
+                    <li>
+                        <h3>Our team is planning to use a <a href = "https://newsapi.org/">News API</a>
+                            and a <a href="https://www.opensecrets.org/open-data/api-documentation">
+                            Financial Data/Political API </a></h3>
+                    </li>
+                    <li>
+                        <h3>The APIs would inform the user of their legislators'
+                            financial transactions as they relate to their political
+                            assignments. The idea here is to provide a greater level of transparency
+                            to voters into the lobbying funds that could sway how a legislator votes.</h3>
+                    </li>
+                    <li>
+                        <h3>The data we are looking to collect from authenticated users is:</h3>
+                        <ul>
+                            <li><h4>Name</h4></li>
+                            <li><h4>Email</h4></li>
+                            <li><h4>Location</h4></li>
+                            <li><h4>Political Interests</h4></li>
+                            <li><h4>Legislators of Interest</h4></li>
+                        </ul>
+                    </li>
+                    <li><h3>Database entries:</h3>
+                    <ul> 
+                        <li><h4>USER -> firstName, lastName, email, password, location, politicalInterests, legislatorsOfInterest</h4></li>
+                        <li><h4>LEGISLATOR -> CID, firstName, lastName, party, office</h4></li>
+                        <li><h4>INDUSTRY -> indCode </h4></li>
+                        <li><h4>COMMITTEE -> cmteCode </h4></li>
+                    </ul></li>
+                </ol>
+            </section></div>
+        <div  class="midRight"><section>
+                <ol>
+                    <li>
+                        <h3>This site is focused on individuals that are (seeking to be) politically engaged
+                            and aware of current political affairs. In addition, it is meant to serve as a tool for individuals to 
+                            become educated on political issues, local government protocols, and how these decisions are relevant/important. 
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>The two primary goals of this site: <br>
+                            1. Raise awareness about political issues and events <br>
+                            2. Keep individuals informed about local government policies and financial affairs of legislators 
+                        </h3>
+                    </li>
+                    <li>
+                        <h3> Our team is motivated to provide a reliable source that offers transparency on the financial affairs of legislators
+                            that may swing a legislator's vote. In addition, we strive to raise awareness about relevant political issues
+                            for people to stay engaged with political affairs. 
+                        </h3>
+                    </li>
+                </ol>
+            </section></div>
+                <div class="footerbox1">
+                    <h3>Resource links</h3>
+                    <ul>
+                        <li><h3><a href="https://newsapi.org/">News API</a></h3></li>
+                        <li><h3><a href="https://www.opensecrets.org/open-data/api-documentation">Political & Financial API</a></h3></li>
+                        <li><h3><a href="https://www.w3schools.com">W3 Schools</a></h3></li>
+                        <li><h3><a href="https://www.nytimes.com">The New York Times</a></h3></li>
+                        <li><h3><a href="https://turbovote.org">TurboVote</a></h3></li>
+                    </ul>
+                </div>
+                <div class="footerbox2"><h3>Questions or concerns</h3>
+                    <ul>
+                        <li>Is there a way to feed the output data of one API as the input to another API?</li>
+                        <li>How might we handle situations where the API returns no data?</li>
+                        <li>How to handle site overload if there are multiple users at one time?</li>
+                        <li>Can excel data be stored in a database?</li>
+                    </ul>
+                </div>                
+                <div class="footerbox3">
+                    <form >
+                        <h3><label>Adjust font size:</label></h3>
+                        <h3><input type="radio" id="smallFont" name="fontSize" value="smallFont" onclick = "smallfont();"/>Smaller font size</h3>
+                        <h3><input type="radio" id="defaulFont" name="fontSize" value="defaultfont" onclick = "defaultfont();"/>Default font size</h3>
+                        <h3><input type="radio" id="largeFont" name="fontSize" value="largefont" onclick = "largefont();"/>Larger font size</h3>
+                    </form> 
+                </div>
+        </div><!--Closing container-->
+    </body>
+</html>
