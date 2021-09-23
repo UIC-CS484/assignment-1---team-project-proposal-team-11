@@ -2,10 +2,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Political Affiars Website</title>
+        <title>Political Funds/Affiars Transparency</title>
 
-        <script>
+        <script type = "text/javascript">
             /** JS Code **/
+            function smallfont() {
+                var elems = document.querySelector("*");
+                elems.style.font = "5px Poppins,serif";
+            }
+            function defaultfont() {
+                var elems = document.querySelector("*");
+                elems.style.font = "15px Poppins,serif";
+            }
+            function largefont() {
+                var elems = document.querySelector("*");
+                elems.style.font = "20px Poppins,serif";
+            }
         </script>
         
 
@@ -204,7 +216,7 @@
         
         <div class="container">
             <div class = "header"><header>
-                <h1>Current Political Affairs</h1>
+                <h1>Political Funds/Affiars Transparency</h1>
 
             </header></div>
 
@@ -271,11 +283,11 @@
                 </div>
                 <div class="footerbox2"><h3>Primary questions or concerns</h3></div>                
                 <div class="footerbox3">
-                    <form action="/action_page.php">
+                    <form action="">
                         <label for="fontSize"><h3>Adjust font size:</h3></label>
-                        <h3><input type="radio" id="smallFont" name="fontSize" value="Small">Smaller font size</h3>
-                        <h3><input type="radio" id="defaulFont" name="fontSize" value="Default">Default font size</h3>
-                        <h3><input type="radio" id="largeFont" name="fontSize" value="Large">Larger font size</h3>
+                        <h3><input type="radio" id="smallFont" name="fontSize" value="smallFont" onclick = "smallfont();"/>Smaller font size</h3>
+                        <h3><input type="radio" id="defaulFont" name="fontSize" value="defaultfont" onclick = "defaultfont();"/>Default font size</h3>
+                        <h3><input type="radio" id="largeFont" name="fontSize" value="largefont" onclick = "largefont();"/>Larger font size</h3>
                     </form> 
                 </div>
         </div><!--Closing container-->
