@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Political Funds/Affiars Transparency</title>
+        <meta charset="UTF-8">
 
-        <script type = "text/javascript">
+        <script>
             /** JS Code **/
             function smallfont() {
                 var elems = document.querySelector("*");
@@ -243,48 +244,58 @@
                             <li><h4>Legislators of Interest</h4></li>
                         </ul>
                     </li>
-                    <li><h3>Database entries:</h3></li>
+                    <li><h3>Database entries:</h3>
                     <ul> 
                         <li><h4>USER -> firstName, lastName, email, password, location, politicalInterests, legislatorsOfInterest</h4></li>
                         <li><h4>LEGISLATOR -> CID, firstName, lastName, party, office</h4></li>
                         <li><h4>INDUSTRY -> indCode </h4></li>
                         <li><h4>COMMITTEE -> cmteCode </h4></li>
-                    </ul>
+                    </ul></li>
                 </ol>
             </section></div>
         <div  class="midRight"><section>
                 <ol>
-                    <l1>
+                    <li>
                         <h3>This site is focused on individuals that are (seeking to be) politically engaged
                             and aware of current political affairs. In addition, it is meant to serve as a tool for individuals to 
                             become educated on political issues, local government protocols, and how these decisions are relevant/important. 
                         </h3>
-                    </l1>
-                    <l1>
+                    </li>
+                    <li>
                         <h3>The two primary goals of this site: <br>
                             1. Raise awareness about political issues and events <br>
                             2. Keep individuals informed about local government policies and financial affairs of legislators 
                         </h3>
-                    </l1>
-                    <l1>
+                    </li>
+                    <li>
                         <h3> Our team is motivated to provide a reliable source that offers transparency on the financial affairs of legislators
                             that may swing a legislator's vote. In addition, we strive to raise awareness about relevant political issues
                             for people to stay engaged with political affairs. 
                         </h3>
-                    </l1>
+                    </li>
                 </ol>
             </section></div>
                 <div class="footerbox1">
-                    <h3>Link to API's</h3>
+                    <h3>Resource links</h3>
                     <ul>
                         <li><h3><a href="https://newsapi.org/">News API</a></h3></li>
                         <li><h3><a href="https://www.opensecrets.org/open-data/api-documentation">Political & Financial API</a></h3></li>
+                        <li><h3><a href="https://www.w3schools.com">W3 Schools</a></h3></li>
+                        <li><h3><a href="https://www.nytimes.com">The New York Times</a></h3></li>
+                        <li><h3><a href="https://turbovote.org">TurboVote</a></h3></li>
                     </ul>
                 </div>
-                <div class="footerbox2"><h3>Primary questions or concerns</h3></div>                
+                <div class="footerbox2"><h3>Questions or concerns</h3>
+                    <ul>
+                        <li>Is there a way to feed the output data of one API as the input to another API?</li>
+                        <li>How might we handle situations where the API returns no data?</li>
+                        <li>How to handle site overload if there are multiple users at one time?</li>
+                        <li>Can excel data be stored in a database?</li>
+                    </ul>
+                </div>                
                 <div class="footerbox3">
-                    <form action="">
-                        <label for="fontSize"><h3>Adjust font size:</h3></label>
+                    <form >
+                        <h3><label>Adjust font size:</label></h3>
                         <h3><input type="radio" id="smallFont" name="fontSize" value="smallFont" onclick = "smallfont();"/>Smaller font size</h3>
                         <h3><input type="radio" id="defaulFont" name="fontSize" value="defaultfont" onclick = "defaultfont();"/>Default font size</h3>
                         <h3><input type="radio" id="largeFont" name="fontSize" value="largefont" onclick = "largefont();"/>Larger font size</h3>
