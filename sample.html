@@ -213,7 +213,14 @@
             </section></div>
                 <div class="footerbox1">Link to API's</div>
                 <div class="footerbox2">"Primary questions or concerns"</div>                
-                <div class="footerbox3">Accessability implementation</div>
+                <div class="footerbox3">
+                    <form action="/action_page.php">
+                        <label for="fontSize">Adjust font size:</label><br>
+                        <input type="radio" id="smallFont" name="fontSize" value="Small">Smaller font size<br>
+                        <input type="radio" id="defaulFont" name="fontSize" value="Default">Default font size<br>
+                        <input type="radio" id="largeFont" name="fontSize" value="Large">Larger font size
+                    </form> 
+                </div>
         </div><!--Closing container-->
     </body>
 </html>
