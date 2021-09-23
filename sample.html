@@ -18,6 +18,10 @@
                                      'midLeft midLeft midLeft midRight midRight midRight'
                                      'footerbox1 footerbox1 footerbox2 footerbox2 footerbox3 footerbox3';
                 grid-gap: 15px;
+                width: 90%;
+                margin: auto
+
+
                 /* width: 82%;
                 margin: auto
                 grid-template-columns: repeat(4, 1fr);
@@ -114,14 +118,16 @@
                 height: 500px;
                 margin: 2%;**/
             }
-/* 
+
             footer{
                 border: 2px solid orange;
                 background-color: lightgray;
                 width: 85%;
                 height: 200px; 
 
-                clear: both;
+                grid-area:footerbox3;
+
+                /**clear: both;
                 display: flex;
                 flex-wrap: wrap;
 
@@ -131,8 +137,8 @@
                 grid-column-start: 1;
                 grid-column-end: -1;
                 grid-row-start: 3;
-                grid-row-end: -1;
-            } */
+                grid-row-end: -1;**/
+            } 
 
             /* .footer_box{
                 border: 2px solid blue;
@@ -212,8 +218,12 @@
                 </ol>
             </section></div>
                 <div class="footerbox1">Link to API's</div>
-                <div class="footerbox2">"Primary questions or concerns"</div>                
-                <div class="footerbox3">Accessability implementation</div>
+                <div class="footerbox2">1.) What is the best way to incorporate multiple API's
+                                        2.) How might we handle situations where we don't have enough data from our api?
+                                        3.) How to handle site overload if there are multiple users at one time?
+                </div>                
+                <div class="footerbox3">
+                </div>
         </div><!--Closing container-->
     </body>
 </html>
